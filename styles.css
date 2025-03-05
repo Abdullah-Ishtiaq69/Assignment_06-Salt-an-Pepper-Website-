@@ -1,9 +1,35 @@
+@font-face {
+    font-family: main-font;
+    src: url(./Fonts/futurak.ttf);
+}
+
 :root {
     --primary-color: rgb(0 0 0);
     --primary-light-color: #0f0f0f;
     --secondary-color: rgb(237 28 36);
     --text-color: #ffffff;
 }
+
 ul li a {
     text-decoration: none !important;
+}
+
+body {
+    background-color: black;
+}
+
+.common-btn {
+    padding: 12px 18px;
+}
+
+.red-btn {
+    background-color: red;
+}
+
+.heading {
+    font-family: main-font !important;
+}
+
+.second-p {
+    color: rgb(255 255 255 / 70%);
 }
