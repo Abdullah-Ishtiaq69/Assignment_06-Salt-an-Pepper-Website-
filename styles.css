@@ -30,6 +30,19 @@ body {
     font-family: main-font !important;
 }
 
+.second-section-txt {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.second-section-txt span {
+    font-size: 52px;
+}
+
 .second-p {
     color: rgb(255 255 255 / 70%);
+}
+
+.second-section-txt h2 {
+    font-size: 40px;
 }
