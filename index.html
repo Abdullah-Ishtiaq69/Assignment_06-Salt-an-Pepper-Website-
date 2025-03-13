@@ -10,135 +10,71 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header class="py-2">
-    <div class="container d-none d-lg-block">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-2 align-items-center">
-          <img src="./assets/logo.webp" alt="" width="165px">
+  <header class="bg-black">
+    <div class="container d-none d-lg-block py-2">
+      <div class="row align-items-center">
+        <div class="col-4 col-md-3">
+          <div class="logo">
+            <img src="./assets/logo.webp" alt="Salt'n Pepper">
+          </div>
         </div>
-        <div class="col-lg-10 offset-lg-0 col-xl-8 offset-xl-2">
-          <ul class="d-flex align-items-center justify-content-end column-gap-5 mb-0" style="list-style-type: none;">
-            <li><a href="" class="text-decoration-none text-white fs-6 fw-semibold">Home</a></li>
-            <li><a href="" class="text-decoration-none text-white fs-6 fw-semibold">About Us</a></li>
-            <li><a href="" class="text-decoration-none text-white fs-6 fw-semibold">Publications</a></li>
-            <div class="buttons d-flex column-gap-2 align-items-center">
-              <li><a href=""
-                  class="text-decoration-none text-white fs-6 fw-semibold border rounded-5 border-white ms-4 common-btn">Get
-                  a Frenchise</a></li>
-
-              <li><a href=""
-                  class="d-flex align-items-center text-decoration-none text-white fs-6 fw-semibold rounded-5 red-btn common-btn">Order
-                  Online
-                  <div class="arrow bg-white ms-3 rounded-5 d-flex justify-content-center align-items-center p-1">
-                    <i class="fa-solid fa-arrow-right text-danger"></i>
-                  </div>
-                </a>
-              </li>
-
-            </div>
+        <div class="nav-links col-6 col-md-7 col-lg-9 offset-lg-0 offset-2 d-flex align-items-center">
+          <ul class="d-flex justify-content-between mb-0 w-100">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About Us</a></li>
+            <li><a href="./index.html">Publications</a></li>
+            <li><a href="./index.html" class="primary header-btn border px-4 rounded-5">Get a Franchise</a></li>
+            <li><a href="./index.html" class="secondary header-btn px-4 rounded-5">Order Online <i
+                  class="fa-solid fa-circle-arrow-right"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
-
-    <nav class="navbar bg-black border-body d-block d-lg-none" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/logo.webp" alt="" width="140px">
+    <div class="d-block d-lg-none navbar bg-black border-bottom border-body py-2" data-bs-theme="dark">
+      <div class="container text-center">
+        <a class="navbar-brand logo2" href="./index.html">
+          <img src="./assets/logo.webp" alt="Salt'n Pepper">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mt-2">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-white fw-semibold" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">About Us</a>
+              <a class="nav-link text-white fw-semibold" href="#">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">Publications</a>
+              <a class="nav-link text-white fw-semibold" href="#">Publications</a>
+            </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" href="#">Get a Franchise</a>
+              <a class="nav-link text-white fw-semibold" href="#">Get a Franchise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-semibold" href="#">Order Online</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   </header>
-
-  <section class="hero-section">
-
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/caurosil_discount.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/caurosil_beef_karahi.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/caurosil_building.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/caurosil_B_B_B.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/caurosil_free_delivery.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/caurosil_lunch.webp" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-  </section>
-
-  <section>
-    <div class="second-section container text-center my-5">
-      <div class="second-section-txt my-5">
-        <h2 class="text-white fw-light">Welcome to <span class="heading"> Salt'n Pepper </span>
-          Restaurants! Our Brands</h2>
-        <p class="second-p fw-semibold">Please click our brands below for further information, reservations or to order
-          online!</p>
-      </div>
-      <div class="row justify-content-center pb-5">
-        <div class="col-4 d-flex flex-column row-gap-4 align-items-center">
-          <img src="./assets/card-1.webp" alt="Salt an Peper" class="bg-white p-3 rounded-1">
-          <a href=""> <button class="py-3 px-5 text-white bg-transparent rounded-5 border border-dark-subtle">Order
-              Now</button></a>
-        </div>
-        <div class="col-4 d-flex flex-column row-gap-4 align-items-center">
-          <img src="./assets/card-2.webp" alt="Salt an Peper" class="bg-white p-3 rounded-1">
-          <a href=""><button class="py-3 px-5 text-white bg-transparent rounded-5 border border-dark-subtle">Order
-              Now</button></a>
-        </div>
-        <div class="col-4 d-flex flex-column row-gap-4 align-items-center">
-          <img src="./assets/card-3.webp" alt="Salt an Peper" class="bg-white p-3 rounded-1">
-          <a href=""><button class="py-3 px-5 text-white bg-transparent rounded-5 border border-dark-subtle">Order
-              Now</button></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
