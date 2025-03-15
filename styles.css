@@ -7,7 +7,8 @@
     --primary-color: rgb(0 0 0);
     --primary-light-color: #0f0f0f;
     --secondary-color: rgb(237 28 36);
-    --text-color: #ffffff;
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #adb7ad;
 }
 
 /* css reset */
@@ -22,6 +23,7 @@
 
 body {
     font-size: 100%;
+    background-color: black;
 }
 
 ul,
@@ -33,10 +35,29 @@ a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 /* utility class */
 
-.heading {
+.large-heading {
     font-family: main-font !important;
+    font-size: 52px !important;
+}
+
+.medium-heading {
+    font-family: main-font !important;
+    font-size: 32px !important;
+}
+
+.small-heading {
+    font-family: main-font !important;
+    font-size: 24px !important;
+}
+
+.para {
+    color: var(--secondary-text-color) !important;
 }
 
 /* main styling */
@@ -52,7 +73,7 @@ a {
 
 .primary {
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
 }
 
 .secondary {
@@ -66,5 +87,60 @@ a {
 }
 
 .logo2 img {
-    width: 130px;
+    width: 110px;
+}
+
+.second-heading-section {
+    width: 68%;
+}
+
+.second-heading-section h1 {
+    font-size: 40px;
+}
+
+@media (max-width: 992px)  {
+
+    .logo2 img {
+        width: 150px;
+    }
+
+    .second-section h1 > span {
+        font-size: 35px !important;
+    }
+
+    .second-section p { 
+        font-size: 14px; 
+    }
+
+    .card-section {
+        overflow-x: auto !important;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card-section > .bg-white > img {
+        width: 230px;       
+    }
+}
+
+@media (max-width: 768px)  {
+    .logo2 img {
+        width: 110px;
+    }
+
+    .second-section {
+        padding: 60px 0 !important;
+    }
+
+    .second-section .w-50 {
+        width: 90% !important;
+    }
+
+    .second-section h1 {
+        margin-bottom: 16px !important;
+    }
+
+    .second-section h1 > span {
+        font-size: 28px !important;
+    }
 }
