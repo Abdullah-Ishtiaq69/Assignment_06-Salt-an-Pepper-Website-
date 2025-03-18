@@ -2,6 +2,7 @@
     font-family: main-font;
     src: url(./Fonts/futurak.ttf);
 }
+
 @font-face {
     font-family: secondary-font;
     src: url(./Fonts/Butler_Regular.otf);
@@ -122,7 +123,7 @@ a {
 }
 
 .s-pic {
-    background-image: url(./assets/s-photo.webp); 
+    background-image: url(./assets/s-photo.webp);
     width: 325px;
     height: 465px;
     right: 20px !important;
@@ -146,7 +147,7 @@ a {
     color: var(--secondary-text-color);
 }
 
-.call-section + .btn > span {
+.call-section+.btn>span {
     padding: 6px 10px !important;
     border-radius: 50% !important;
 }
@@ -162,7 +163,7 @@ a {
     color: var(--secondary-text-color);
 }
 
-.fourth-section-call + .btn {
+.fourth-section-call+.btn {
     padding: 13px 20px !important;
 }
 
@@ -179,6 +180,36 @@ a {
     font-size: 14px !important;
 }
 
+.fifth-section {
+    background-color: var(--primary-light-color);
+}
+
+.fifth-left>img {
+    width: 100%;
+}
+
+.fifth-right>h6 {
+    letter-spacing: 5px;
+}
+
+.fifth-location,
+.fifth-call {
+    color: var(--secondary-text-color);
+}
+
+.fifth-call+.btn {
+    padding: 13px 20px !important;
+    transition: .2s background-color linear;
+}
+
+.fifth-call+.btn > span {
+    padding: 6px 10px !important;
+    border-radius: 50% !important;
+}
+
+.fifth-call + .btn:hover {
+    background-color: transparent !important;
+}
 
 @media (max-width: 992px) {
 
@@ -186,7 +217,7 @@ a {
         width: 150px;
     }
 
-    .second-section h1 > span {
+    .second-section h1>span {
         font-size: 35px !important;
     }
 
@@ -208,8 +239,15 @@ a {
         text-align: center;
     }
 
-    .fourth-card > img {
+    .fourth-card>img {
         width: 60%;
+    }
+
+    .fifth-left,
+    .fifth-right {
+        width: 100% !important;
+        text-align: center;
+        padding-left: 0px !important;
     }
 }
 
@@ -238,7 +276,7 @@ a {
         width: 90%;
     }
 
-    .fourth-card > img {
+    .fourth-card>img {
         width: 80%;
     }
 }
@@ -247,7 +285,8 @@ a {
     .first-card img {
         width: 100% !important;
     }
-    .fourth-card > img {
+
+    .fourth-card>img {
         width: 90%;
     }
 }
