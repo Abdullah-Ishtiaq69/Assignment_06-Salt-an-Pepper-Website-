@@ -151,13 +151,42 @@ a {
     border-radius: 50% !important;
 }
 
+.fourth-small-heading {
+    font-size: 14px !important;
+    letter-spacing: 5px !important;
+    color: var(--secondary-color);
+}
+
+.fourth-section-location,
+.fourth-section-call {
+    color: var(--secondary-text-color);
+}
+
+.fourth-section-call + .btn {
+    padding: 13px 20px !important;
+}
+
+.fourth-btn {
+    padding: 6px 10px !important;
+    border-radius: 50% !important;
+}
+
+.fourth-btn i {
+    transform: rotate(-35deg);
+}
+
+.fourth-card p {
+    font-size: 14px !important;
+}
+
+
 @media (max-width: 992px) {
 
     .logo2 img {
         width: 150px;
     }
 
-    .second-section h1>span {
+    .second-section h1 > span {
         font-size: 35px !important;
     }
 
@@ -177,6 +206,10 @@ a {
 
     .third-card-section {
         text-align: center;
+    }
+
+    .fourth-card > img {
+        width: 60%;
     }
 }
 
@@ -204,10 +237,17 @@ a {
     .card-section {
         width: 90%;
     }
+
+    .fourth-card > img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 576px) {
     .first-card img {
         width: 100% !important;
+    }
+    .fourth-card > img {
+        width: 90%;
     }
 }
