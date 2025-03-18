@@ -2,6 +2,10 @@
     font-family: main-font;
     src: url(./Fonts/futurak.ttf);
 }
+@font-face {
+    font-family: secondary-font;
+    src: url(./Fonts/Butler_Regular.otf);
+}
 
 :root {
     --primary-color: rgb(0 0 0);
@@ -44,20 +48,30 @@ a {
 .large-heading {
     font-family: main-font !important;
     font-size: 52px !important;
+    font-weight: 500 !important;
 }
 
 .medium-heading {
     font-family: main-font !important;
     font-size: 32px !important;
+    font-weight: 500 !important;
 }
 
 .small-heading {
     font-family: main-font !important;
     font-size: 24px !important;
+    font-weight: 500 !important;
+}
+
+.secondary-large-heading {
+    font-family: secondary-font !important;
+    font-size: 48px !important;
+    font-weight: 900 !important;
 }
 
 .para {
     color: var(--secondary-text-color) !important;
+    font-weight: 500 !important;
 }
 
 /* main styling */
@@ -90,6 +104,10 @@ a {
     width: 110px;
 }
 
+.second-section {
+    padding-bottom: 90px !important;
+}
+
 .second-heading-section {
     width: 68%;
 }
@@ -98,18 +116,53 @@ a {
     font-size: 40px;
 }
 
-@media (max-width: 992px)  {
+.second-section .btn {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.s-pic {
+    background-image: url(./assets/s-photo.webp); 
+    width: 325px;
+    height: 465px;
+    right: 20px !important;
+}
+
+.third-section {
+    background-color: var(--primary-light-color);
+}
+
+.third-card-left h5,
+.third-card-right h5 {
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.location-section,
+.call-section {
+    color: var(--secondary-text-color);
+}
+
+.call-section + .btn > span {
+    padding: 6px 10px !important;
+    border-radius: 50% !important;
+}
+
+@media (max-width: 992px) {
 
     .logo2 img {
         width: 150px;
     }
 
-    .second-section h1 > span {
+    .second-section h1>span {
         font-size: 35px !important;
     }
 
-    .second-section p { 
-        font-size: 14px; 
+    .second-section p {
+        font-size: 14px;
     }
 
     .card-section {
@@ -118,12 +171,16 @@ a {
         margin: 0 auto;
     }
 
-    .card-section > .bg-white > img {
-        width: 230px;       
+    .card-section>.bg-white>img {
+        width: 230px;
+    }
+
+    .third-card-section {
+        text-align: center;
     }
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
     .logo2 img {
         width: 110px;
     }
@@ -140,7 +197,17 @@ a {
         margin-bottom: 16px !important;
     }
 
-    .second-section h1 > span {
+    .second-section h1>span {
         font-size: 28px !important;
+    }
+
+    .card-section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .first-card img {
+        width: 100% !important;
     }
 }
