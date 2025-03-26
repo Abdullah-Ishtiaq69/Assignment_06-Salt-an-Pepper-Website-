@@ -94,6 +94,8 @@ input[type="checkbox"] {
 .para-light {
     color: var(--secondary-text-color) !important;
     font-weight: 400 !important;
+    font-size: 15px !important;
+    margin-bottom: 5px;
 }
 
 .heading {
@@ -405,6 +407,10 @@ input[type="checkbox"] {
 
     .about-second-right {
         width: 100% !important;
+    }
+
+    .about-fourth-section {
+        text-align: center;
     }
 }
 
