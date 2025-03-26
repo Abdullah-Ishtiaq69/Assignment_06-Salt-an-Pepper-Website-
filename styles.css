@@ -80,6 +80,12 @@ input[type="checkbox"] {
     font-weight: 900 !important;
 }
 
+.secondary-medium-heading {
+    font-family: secondary-font !important;
+    font-size: 40px !important;
+    font-weight: 600 !important;
+}
+
 .para {
     color: var(--secondary-text-color) !important;
     font-weight: 500 !important;
@@ -251,7 +257,7 @@ input[type="checkbox"] {
     font-size: 12px;
 }
 
-.last-section > h2 {
+.last-section>h2 {
     font-family: 'Times New Roman', Times, serif !important;
 }
 
@@ -273,8 +279,8 @@ input[type="checkbox"] {
     display: none;
 }
 
-#checkbox-1:checked ~ .accordian-section > .accordian-1body,
-#checkbox-2:checked ~ .accordian-section > .accordian-2body {
+#checkbox-1:checked~.accordian-section>.accordian-1body,
+#checkbox-2:checked~.accordian-section>.accordian-2body {
     display: flex;
 }
 
@@ -283,7 +289,7 @@ input[type="checkbox"] {
     font-family: 'Times New Roman', Times, serif !important;
 }
 
-.accordian-section a{
+.accordian-section a {
     color: var(--secondary-text-color);
 }
 
@@ -328,6 +334,16 @@ input[type="checkbox"] {
 
 .fourth {
     width: 20%;
+}
+
+/* About Page */
+
+.about-second-left {
+    width: 48% !important;
+}
+
+.about-second-right {
+    width: 48% !important;
 }
 
 @media (max-width: 992px) {
@@ -376,6 +392,19 @@ input[type="checkbox"] {
     .sixth-card {
         width: 60%;
         margin-bottom: 20px !important;
+    }
+
+    .about-second-section {
+        text-align: center;
+        margin-bottom: 0px !important;
+    }
+
+    .about-second-left {
+        width: 100% !important;
+    }
+
+    .about-second-right {
+        width: 100% !important;
     }
 }
 
