@@ -48,6 +48,15 @@ input[type="checkbox"] {
     display: none;
 }
 
+input {
+    outline: 0px solid var(--secondary-color);
+    transition: .3s outline ease-in;
+}
+
+input:focus {
+    outline: var(--secondary-color) 1px solid;
+}
+
 /* utility class */
 
 .large-heading {
@@ -374,6 +383,17 @@ input[type="checkbox"] {
     transform: scale(1.1);
 }
 
+/* Franchise Page */
+
+.bi {
+    top: 60%;
+    right: 4%;
+}
+
+.form-section .btn {
+    padding: 10px 40px !important;
+}
+
 @media (max-width: 992px) {
 
     .logo2 img {
@@ -438,6 +458,11 @@ input[type="checkbox"] {
     .about-fourth-section {
         text-align: center;
     }
+
+    .bi {
+        top: 62%;
+        right: 6%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -467,6 +492,19 @@ input[type="checkbox"] {
 
     .fourth-card>img {
         width: 80%;
+    }
+
+    .form-section .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    input[id="brand"] {
+        margin-bottom: 10px !important;
+    }
+
+    .bi {
+        top: 60%;
+        right: 4%;
     }
 }
 
@@ -504,5 +542,10 @@ input[type="checkbox"] {
     .last-img-section img {
         width: 200px;
         height: 200px
+    }
+
+    .bi {
+        top: 60%;
+        right: 6%;
     }
 }
